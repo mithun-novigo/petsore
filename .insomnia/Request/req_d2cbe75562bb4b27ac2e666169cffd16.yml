@@ -1,0 +1,45 @@
+_id: req_d2cbe75562bb4b27ac2e666169cffd16
+type: Request
+parentId: fld_a196ce015fe648a489da2c335e5d0612
+modified: 1692429331715
+created: 1692429011875
+url: "{{ _.base_url }}/pet"
+name: Add a new pet to the store
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 10,
+      "category": {
+        "id": 1,
+        "name": "Dogs"
+      },
+      "name": "dingo",
+      "photoUrls": [
+        "https://photo1.example.com",
+        "https://photo2.example.com"
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "tag1"
+        }
+      ],
+      "status": "available"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json
+authentication: {}
+metaSortKey: -1692429011875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

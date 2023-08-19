@@ -1,0 +1,27 @@
+_id: req_afa61afa15e74152a303c9463ae0be35
+type: Request
+parentId: fld_a196ce015fe648a489da2c335e5d0612
+modified: 1692429011899
+created: 1692429011899
+url: "{{ _.base_url }}/pet/{{ _.petId }}"
+name: Updates a pet in the store with form data
+description: ""
+method: POST
+body: {}
+parameters:
+  - name: name
+    disabled: true
+    value: string
+  - name: status
+    disabled: true
+    value: string
+headers: []
+authentication: {}
+metaSortKey: -1692429011899
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
