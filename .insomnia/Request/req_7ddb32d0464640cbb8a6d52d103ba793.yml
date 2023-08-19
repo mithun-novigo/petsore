@@ -1,0 +1,45 @@
+_id: req_7ddb32d0464640cbb8a6d52d103ba793
+type: Request
+parentId: fld_a196ce015fe648a489da2c335e5d0612
+modified: 1692429011869
+created: 1692429011869
+url: "{{ _.base_url }}/pet"
+name: Update an existing pet
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "id": 10,
+      "category": {
+        "id": 1,
+        "name": "Dogs"
+      },
+      "name": "dingo",
+      "photoUrls": [
+        "https://photo1.example.com",
+        "https://photo2.example.com"
+      ],
+      "tags": [
+        {
+          "id": 1,
+          "name": "tag1"
+        }
+      ],
+      "status": "available"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/json
+authentication: {}
+metaSortKey: -1692429011869
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,20 @@
+_id: env_2338b159b4c54985b784d82bb6af0441
+type: Environment
+parentId: env_eec65f25ef84cbc44003f2a40ec10de7681f1055
+modified: 1692429577659
+created: 1692429243532
+name: Stage
+data:
+  scheme: https
+  base_path: /api/v3
+  host: petstore3.swagger.io
+  base_url: https://petstore3.swagger.io/api/v3
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_path
+    - host
+    - base_url
+color: "#7d69cb"
+isPrivate: false
+metaSortKey: 1692429243532

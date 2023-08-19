@@ -1,0 +1,28 @@
+_id: req_3632932dcb2140b1b3e28a56fccaa8bf
+type: Request
+parentId: fld_a196ce015fe648a489da2c335e5d0612
+modified: 1692429011910
+created: 1692429011910
+url: "{{ _.base_url }}/pet/{{ _.petId }}/uploadImage"
+name: Uploads an image
+description: ""
+method: POST
+body:
+  mimeType: application/octet-stream
+parameters:
+  - name: additionalMetadata
+    disabled: true
+    value: string
+headers:
+  - name: Content-Type
+    disabled: false
+    value: application/octet-stream
+authentication: {}
+metaSortKey: -1692429011910
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
