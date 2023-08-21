@@ -1,0 +1,145 @@
+_format_version: "3.0"
+services:
+  - name: Pet_Service
+    protocol: https
+    host: petstore3.swagger.io
+    port: 443
+    path: /api/v3
+    plugins: []
+    routes:
+      - tags:
+          &a1
+          - OAS3_import
+        name: Pet_Service-updatePet
+        methods:
+          - PUT
+        paths:
+          - ~/pet$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-addPet
+        methods:
+          - POST
+        paths:
+          - ~/pet$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-findPetStatus
+        methods:
+          - GET
+        paths:
+          - ~/pet/findByStatus$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-findPetTags
+        methods:
+          - GET
+        paths:
+          - ~/pet/findByTags$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-getPetById
+        methods:
+          - GET
+        paths:
+          - ~/pet/(?<petId>[^/]+)$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-updatePetForm
+        methods:
+          - POST
+        paths:
+          - ~/pet/(?<petId>[^/]+)$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-deletePet
+        methods:
+          - DELETE
+        paths:
+          - ~/pet/(?<petId>[^/]+)$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-uploadFile
+        methods:
+          - POST
+        paths:
+          - ~/pet/(?<petId>[^/]+)/uploadImage$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-getInvent
+        methods:
+          - GET
+        paths:
+          - ~/store/inventory$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-placeOrder
+        methods:
+          - POST
+        paths:
+          - ~/store/order$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-getOrderId
+        methods:
+          - GET
+        paths:
+          - ~/store/order/(?<orderId>[^/]+)$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-deleteOrder
+        methods:
+          - DELETE
+        paths:
+          - ~/store/order/(?<orderId>[^/]+)$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-createUser
+        methods:
+          - POST
+        paths:
+          - ~/user$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-createUserInput
+        methods:
+          - POST
+        paths:
+          - ~/user/createWithList$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-loginUser
+        methods:
+          - GET
+        paths:
+          - ~/user/login$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-logoutUser
+        methods:
+          - GET
+        paths:
+          - ~/user/logout$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-getUserName
+        methods:
+          - GET
+        paths:
+          - ~/user/(?<username>[^/]+)$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-updateUser
+        methods:
+          - PUT
+        paths:
+          - ~/user/(?<username>[^/]+)$
+        strip_path: false
+      - tags: *a1
+        name: Pet_Service-deleteUser
+        methods:
+          - DELETE
+        paths:
+          - ~/user/(?<username>[^/]+)$
+        strip_path: false
+    tags: *a1
